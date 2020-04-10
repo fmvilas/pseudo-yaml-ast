@@ -1,7 +1,7 @@
 {
   "name": "@fmvilas/pseudo-yaml-ast",
   "description": "Fork of pseudo-yaml-ast. Parse a YAML string into an object with location properties",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "publishConfig": {
     "access": "public"
   },
