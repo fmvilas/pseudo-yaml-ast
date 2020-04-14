@@ -31,11 +31,13 @@ const getLoc = (input, { start = 0, end = 0 }) => {
     if (isUndefined(loc.start.line) && isBetween(ls, start, le)) {
       loc.start.line = i + 1;
       loc.start.column = start - ls;
+      loc.start.offset = start;
     }
 
     if (isUndefined(loc.end.line) && isBetween(ls, end, le)) {
       loc.end.line = i + 1;
       loc.end.column = end - ls;
+      loc.end.offset = end;
     }
 
     sum = le + 1; // +1 because the break is also a char
