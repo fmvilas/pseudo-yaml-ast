@@ -113,7 +113,8 @@ const visitors = {
 
 const walk = (nodes = [], input, ctx = {}) => {
   const onNode = (node, ctx, fallback) => {
-    const visitor = visitors[Kind[node.kind]];
+    let visitor; 
+    if (node) visitor = visitors[Kind[node.kind]];
     return visitor ? visitor(node, input, ctx) : fallback;
   };
 
