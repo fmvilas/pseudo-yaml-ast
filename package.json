@@ -18,6 +18,10 @@
     "loc",
     "location"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fmvilas/pseudo-yaml-ast.git"
+  },
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint . --fix --ext .js --ext .md",
